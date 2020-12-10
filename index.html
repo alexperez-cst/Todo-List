@@ -1,18 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="./style/style.css">
-	<source src='../src/index.js' async>
+	<script src="../src/index.js" async></script>
 	<title>To-Do List</title>
+
 </head>
-<body>
+<body id=bodyGrid>
 	<div id='leftBar'>
-		
+		<h1 id='title'>To-Do List</h1>
+		<h2 id='subTitle'>Cobalt2 Edition</h2>
+		<hr id='leftBr'>
+		<div id='todoGroup'>
+			<div id='todoList'>
+				<div id='nameGroup'>Home</div>
+			</div>
+		</div>
+		<div id='newList'>
+			<button id='createList'>+ New List</button>
+		</div>
 	</div>
 	<div id='toDoContainer'>
-
+		<div id='todos'>
+			<div class='todoBlock'>
+				<div class='vertical'></div>
+				<h2 id='todoTitle'>A Title</h2>
+				<div id='description'>A description</div>
+				<div id='date'>12/2/21</div>
+				<button id = 'edit'>Edit</button>
+				<button id = 'delete'>Delete</button>
+			</div>
+			<div class='todoBlock'>
+				<div class='vertical'></div>
+				<h2 id='todoTitle'>A Title</h2>
+				<div id='description'>A description</div>
+				<div id='date'>12/2/21</div>
+				<button id = 'edit'>Edit</button>
+				<button id = 'delete'>Delete</button>
+			</div>
+			<button id= 'newBlock'>+ New ToDo</button>
+		</div>
 	</div>
+
 </body>
 </html>
