@@ -25,7 +25,7 @@
 	position: absolute;
 	bottom: 0px;
 	margin-bottom: 10%;
-	margin-left: 20%;
+	margin-left: 25%;
 	transition: 0.5s;
 }
 #createList:hover{
@@ -37,15 +37,15 @@
 }
 #title{
 	font-weight: 700;
-	margin-left: 17%;
+	margin-left: 23%;
 	margin-top: 10%;
-	font-size: 2em;
+	font-size: 2.2em;
 	letter-spacing: 0.1em;
 	color: #ffe50a;
 }
 #subTitle{
 	font-weight: 500;
-	margin-left: 21%;
+	margin-left: 27%;
 	font-size: 1em;
 	letter-spacing: 0.2em;
 	color: #f3dc0c
@@ -160,7 +160,7 @@ button:hover{
 	height: 2.75em;
 	font-size: 20px;
 }
-#editTodoForm{
+.form{
 	display:none;
 	background-color: #193549;
 	position:fixed;
@@ -171,28 +171,37 @@ button:hover{
 	left: 0px;
 	right: 0px
 }
-#editTodoFormWrapper{
-	padding: 5%;
+.formWrapper{
+	border-radius: 10px;
+	margin:10% 30% 20% 30%;
+	height: 25em;
+	align-items: left;
 	display:flex;
 	flex-direction: column;
 	justify-content: center;
 	background-color: #10476b;
 }
-#newTodoForm{
-	display:none;
-	background-color: #193549;
-	position:fixed;
-	width:100%;
-	height: 100%;
-	top:0px;
-	bottom: 0px;
-	left: 0px;
-	right: 0px
+input{
+	width: 90%;
+	height: 10%;
 }
-#newTodoFormWrapper{
-	padding: 5%;
-	display:flex;
-	flex-direction: column;
-	justify-content: center;
-	background-color: #10476b;
+#formTitle{
+	margin-left: 8%;
+	color:#ffe50a;
+	letter-spacing: 0.1px;
+	font-size: 35px;
+}
+form{
+	margin-left: 6%;
+}
+.submitButton{
+	margin-top: 8%;
+	margin-left: 1% !important;
+	height: 2em;
+}
+h3{
+	color:#ffe50a;
+}
+.selected{
+	background-color: #1d71aa !important;
 }
