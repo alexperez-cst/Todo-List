@@ -1,3 +1,4 @@
+import * as DOM from './domManipulation.js';
 /*
 	# The 'todos' are going to be objects created with classes
 	# A 'todo' will have:
