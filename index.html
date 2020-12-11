@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="./style/style.css">
-	<script src="../src/index.js" async></script>
+	<script src="./main.js" async></script>
 	<title>To-Do List</title>
 
 </head>
@@ -28,22 +28,32 @@
 			<div class='todoBlock'>
 				<div class='vertical'></div>
 				<h2 id='todoTitle'>A Title</h2>
-				<div id='description'>A description</div>
 				<div id='date'>12/2/21</div>
-				<button id = 'edit'>Edit</button>
-				<button id = 'delete'>Delete</button>
+				<button id = 'edit' onClick='return DOM.editTodoButton()'>Edit</button>
+				<button id = 'delete' onClick='return DOM.removeTodo()'>Delete</button>
 			</div>
-			<div class='todoBlock'>
-				<div class='vertical'></div>
-				<h2 id='todoTitle'>A Title</h2>
-				<div id='description'>A description</div>
-				<div id='date'>12/2/21</div>
-				<button id = 'edit'>Edit</button>
-				<button id = 'delete'>Delete</button>
-			</div>
-			<button id= 'newBlock'>+ New ToDo</button>
+		</div>
+		<button id= 'newBlock' onClick="return DOM.createTodo()">+ New ToDo</button>
+	</div>
+	<div id=editTodoForm>
+		<div id=editTodoFormWrapper>
+			<h2 id='title'>Edit a To-Do</h2>
+			<form onsubmit="return DOM.submitEditTodoForm()">
+				<input type='text' id='editTitleForm'required>
+				<input type='date' id='editDateForm'required>
+				<input type='submit'>
+			</form>
 		</div>
 	</div>
-
+	<div id=newTodoForm>
+		<div id=newTodoFormWrapper>
+			<h2 id='title'>Create a new To-Do</h2>
+			<form	onsubmit="return DOM.submitNewTodoForm()">
+				<input type='text' id='newTitleForm'required>
+				<input type='date' id='newDateForm'required>
+				<input type="submit">
+			</form>
+		</div>
+	</div>
 </body>
 </html>
